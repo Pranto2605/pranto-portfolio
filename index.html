@@ -3,188 +3,280 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Tayab Hasan Pranto | Portfolio</title>
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 </head>
+
 <body>
 
+  <!-- Header / Navbar -->
   <header class="header">
     <nav class="navbar">
-      <div class="logo">Pranto</div>
+
+      <div class="nav-brand"></div>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
-<li><a href="#research">Research</a></li>
-<li><a href="#experience">Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#leadership">Leadership</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+      <div class="menu-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero" id="home">
+
     <div class="hero-content">
-      <p class="intro">Hello, I am</p>
+      <p class="intro-text">Hello, I am</p>
+
       <h1>Tayab Hasan Pranto</h1>
+
       <h2>Oceanography Student & Research Enthusiast</h2>
-      <p class="hero-text">
-        Motivated Oceanography honors student with interests in coastal systems,
-        climate variability, sustainable marine resource management, and scientific data analysis.
-      </p>
 
-     <div class="hero-buttons">
-  <a href="#contact" class="btn primary-btn">Contact Me</a>
-  <a href="files/Pranto_CV.pdf" class="btn secondary-btn" download>Download CV</a>
-</div>
+      <p class="hero-description">
+  I study oceanography with a focus on coastal and marine systems, combining academic learning,
+  research interest, and practical problem-solving to understand the ocean environment more deeply.
+</p>
+
+      <div class="hero-info">
+        <span><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</span>
+        <span><i class="fa-solid fa-graduation-cap"></i> Bangladesh Maritime University</span>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn primary-btn">Contact Me</a>
+        <a href="files/Pranto_CV.pdf" class="btn secondary-btn" download>Download CV</a>
+      </div>
     </div>
 
-    <div class="hero-card">
+    <div class="hero-profile-card hover-card">
       <div class="profile-photo">
-  <img src="images/profile.jpg" alt="Tayab Hasan Pranto">
-</div>
-      <h3>B.Sc. in Oceanography</h3>
-      <p>Bangladesh Maritime University</p>
-      <p>Dhaka, Bangladesh</p>
+        <img src="images/profile.jpg" alt="Tayab Hasan Pranto">
+      </div>
+
+      <h3>Tayab Hasan Pranto</h3>
+      <p>B.Sc. in Oceanography</p>
+      <p>CGPA: 3.41 / 4.00</p>
+
+      <div class="mini-tags">
+        <span>Oceanography</span>
+        <span>Research</span>
+        <span>Data Analysis</span>
+      </div>
     </div>
+
   </section>
 
+  <!-- About Section -->
   <section class="section" id="about">
+
     <div class="section-title">
       <h2>About Me</h2>
-      <p>A brief introduction about my academic and professional journey</p>
+      <p>A short introduction about my academic and professional journey</p>
     </div>
 
-    <div class="about-box">
-      <p>
-        I am an Oceanography honors student at Bangladesh Maritime University with a strong
-        academic foundation and practical experience in academic mentoring, event coordination,
-        customer communication, and data-driven problem solving.
-      </p>
-      <p>
-        My academic interests focus on coastal systems, climate variability, marine environmental
-        studies, and sustainable ocean resource management. I am also interested in scientific
-        documentation, Python-based data analysis, and research-based problem solving.
-      </p>
+    <div class="about-container">
+
+
+     <div class="about-content hover-card">
+  <h3>Building my path through ocean science, research, and communication</h3>
+
+  <p>
+    I am currently pursuing my B.Sc. in Oceanography at Bangladesh Maritime University,
+    where I am developing a strong academic foundation in coastal processes, marine
+    environmental systems, climate variability, and sustainable ocean resource management.
+  </p>
+
+  <p>
+    My academic journey has also helped me build important soft skills such as clear
+    communication, teamwork, leadership, teaching, and event coordination. Through my
+    experience in academic mentoring and online page moderation, I have learned to work
+    responsibly, communicate professionally, and manage tasks with consistency.
+  </p>
+
+        <div class="about-details">
+          <div>
+            <strong>University</strong>
+            <span>Bangladesh Maritime University</span>
+          </div>
+
+          <div>
+            <strong>Field</strong>
+            <span>Oceanography</span>
+          </div>
+
+          <div>
+            <strong>Interest</strong>
+            <span>Coastal & Marine Research</span>
+          </div>
+
+          <div>
+            <strong>Location</strong>
+            <span>Dhaka, Bangladesh</span>
+          </div>
+        </div>
+      </div>
+
     </div>
+
   </section>
 
+  <!-- Education Section -->
   <section class="section" id="education">
+
     <div class="section-title">
       <h2>Education</h2>
       <p>My academic background</p>
     </div>
 
     <div class="timeline">
-      <div class="timeline-item">
+
+      <div class="timeline-item hover-card">
         <h3>Bachelor of Science Honors in Oceanography</h3>
         <h4>Bangladesh Maritime University</h4>
         <p>2021 – Present</p>
         <p>Current CGPA: 3.41 / 4.00</p>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item hover-card">
         <h3>Higher Secondary Certificate</h3>
         <h4>Dhaka Board</h4>
         <p>Science Group | 2021</p>
         <p>GPA: 5.00 / 5.00</p>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item hover-card">
         <h3>Secondary School Certificate</h3>
         <h4>Dhaka Board</h4>
         <p>Science Group | 2019</p>
         <p>GPA: 4.78 / 5.00</p>
       </div>
+
     </div>
+
   </section>
-<section class="section" id="research">
-  <div class="section-title">
-    <h2>Research & Academic Projects</h2>
-    <p>Selected academic interests and research-based works</p>
-  </div>
 
-  <div class="cards-grid">
-    <div class="card">
-      <h3>Coastal Systems and Climate Variability</h3>
-      <p>
-        Academic interest in understanding coastal processes, climate variability,
-        and their influence on marine and coastal environments.
-      </p>
+  <!-- Research Section -->
+  <section class="section" id="research">
+
+    <div class="section-title">
+      <h2>Research & Academic Projects</h2>
+      <p>Selected academic interests and research-based works</p>
     </div>
 
-    <div class="card">
-      <h3>Sustainable Marine Resource Management</h3>
-      <p>
-        Research interest in sustainable use of marine resources, marine spatial planning,
-        and ecosystem-based coastal management.
-      </p>
+    <div class="cards-grid">
+
+      <div class="card hover-card">
+        <h3>Coastal Systems and Climate Variability</h3>
+        <p>
+          Academic interest in understanding coastal processes, climate variability,
+          and their influence on marine and coastal environments.
+        </p>
+      </div>
+
+      <div class="card hover-card">
+        <h3>Sustainable Marine Resource Management</h3>
+        <p>
+          Research interest in sustainable use of marine resources, marine spatial planning,
+          and ecosystem-based coastal management.
+        </p>
+      </div>
+
+      <div class="card hover-card">
+        <h3>Scientific Data Analysis</h3>
+        <p>
+          Basic experience in Python-based data analysis, data handling, and scientific
+          documentation for oceanographic and environmental studies.
+        </p>
+      </div>
+
+      <div class="card hover-card">
+        <h3>Marine Environmental Studies</h3>
+        <p>
+          Interested in marine pollution, coastal ecosystem health, blue carbon,
+          and environmental assessment in coastal and marine regions.
+        </p>
+      </div>
+
     </div>
 
-    <div class="card">
-      <h3>Scientific Data Analysis</h3>
-      <p>
-        Basic experience in Python-based data analysis, data handling, and scientific
-        documentation for oceanographic and environmental studies.
-      </p>
-    </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Experience Section -->
   <section class="section" id="experience">
+
     <div class="section-title">
       <h2>Professional Experience</h2>
       <p>Work experience and practical responsibilities</p>
     </div>
 
     <div class="cards-grid">
-      <div class="card">
+
+      <div class="card hover-card">
         <h3>Page Moderator</h3>
         <h4>ORBIT BD</h4>
         <p class="date">Sept. 2025 – Present</p>
         <p>
-          Handling online customer support, product inquiries, order communication,
-          and maintaining professional response quality across social media platforms.
+          Handling online customer support through chat-based platforms, responding to
+          product inquiries, order updates, and availability-related questions while
+          maintaining professional communication.
         </p>
       </div>
 
-      <div class="card">
+      <div class="card hover-card">
         <h3>Private Tutor & Academic Instructor</h3>
         <h4>Academic Teaching Experience</h4>
         <p class="date">2022 – Present</p>
         <p>
-          Providing structured academic instruction to students in Physics, Chemistry,
-          and Mathematics, including coaching center teaching experience.
+          Providing structured academic instruction to Class 8 and SSC-level students
+          in Physics, Chemistry, and Mathematics through private tutoring and coaching
+          center settings.
         </p>
       </div>
 
-      <div class="card">
+      <div class="card hover-card">
         <h3>Senior Page Moderator</h3>
         <h4>Aurnish Digital Operations</h4>
         <p class="date">Oct. 2023 – Feb. 2024</p>
         <p>
-          Managed customer interactions, order-related communication, and coordinated
+          Managed customer interactions, order-related communications, and coordination
           with internal teams during peak operational periods.
         </p>
       </div>
 
-      
-
-    
     </div>
+
   </section>
 
+  <!-- Skills Section -->
   <section class="section" id="skills">
+
     <div class="section-title">
       <h2>Skills</h2>
       <p>Technical, academic, and professional skills</p>
     </div>
 
     <div class="skills-container">
-      <div class="skill-box">
+
+      <div class="skill-box hover-card">
         <h3>Computational Skills</h3>
         <ul>
           <li>Python Basic Scientific Computing</li>
@@ -193,7 +285,7 @@
         </ul>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hover-card">
         <h3>Productivity Tools</h3>
         <ul>
           <li>Microsoft Word</li>
@@ -203,7 +295,7 @@
         </ul>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hover-card">
         <h3>Core Competencies</h3>
         <ul>
           <li>Academic Communication</li>
@@ -213,57 +305,89 @@
         </ul>
       </div>
 
-      <div class="skill-box">
+      <div class="skill-box hover-card">
         <h3>Languages</h3>
         <ul>
           <li>Bangla: Native Proficiency</li>
           <li>English: Professional Working Proficiency</li>
         </ul>
       </div>
+
     </div>
+
   </section>
 
+  <!-- Leadership Section -->
   <section class="section" id="leadership">
+
     <div class="section-title">
       <h2>Leadership & Engagement</h2>
       <p>University activities, event coordination, and achievements</p>
     </div>
 
-    <div class="about-box">
+    <div class="leadership-box hover-card">
       <h3>University Event Coordinator</h3>
+
       <p>
         I have coordinated volunteer teams and logistics for major academic and cultural
-        university events. I also served as a core organizer for World Ocean Day 2023 and 2024,
-        supporting program flow and participant coordination.
+        university events. I also served as a core organizer for World Ocean Day 2023 and
+        2024, supporting program flow and participant coordination.
       </p>
 
       <h3>Honors & Awards</h3>
+
       <ul class="award-list">
         <li>Medalist, Inter-College Quiz Competition 2021</li>
         <li>Multi-Sport Prize Winner at school and college level tournaments</li>
         <li>Academic merit recognition for maintaining strong academic performance with extracurricular involvement</li>
       </ul>
     </div>
+
   </section>
 
+  <!-- Contact Section -->
   <section class="section contact-section" id="contact">
+
     <div class="section-title">
       <h2>Contact Me</h2>
-      <p>Feel free to connect with me</p>
+      <p>Feel free to connect with me through my professional and social platforms</p>
     </div>
 
-   <div class="contact-box">
-  <p><strong>Email:</strong> tayabhasanpranto@gmail.com</p>
-  <p><strong>Phone:</strong> +880-1521394276</p>
-  <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+    <div class="contact-box hover-card">
 
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/tayab-hasan-pranto-a80579252" target="_blank">LinkedIn</a>
-    <a href="https://github.com/Pranto2605" target="_blank">GitHub</a>
-  </div>
-</div>
+      <p><strong>Email:</strong> tayabhasanpranto@gmail.com</p>
+      <p><strong>Phone:</strong> +880-1521394276</p>
+      <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+
+      <div class="social-icons">
+
+        <a href="https://www.linkedin.com/in/tayab-hasan-pranto-a80579252" target="_blank" class="social-icon linkedin">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://www.facebook.com/tayabhasanpranto0205" target="_blank" class="social-icon facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+
+        <a href="https://github.com/Pranto2605" target="_blank" class="social-icon github">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+
+        <a href="https://wa.me/8801521394276" target="_blank" class="social-icon whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+
+      </div>
+
+    </div>
+
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2026 Tayab Hasan Pranto. All Rights Reserved.</p>
   </footer>
